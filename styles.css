@@ -1,13 +1,9 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header {
@@ -18,11 +14,12 @@ header {
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -39,13 +36,12 @@ section {
     padding: 2rem;
 }
 
-section#about {
-    background: #f4f4f4;
-}
-
 form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 2rem;
+    background: #e0e0e0;
+    border-radius: 8px;
 }
 
 form label {
@@ -53,10 +49,16 @@ form label {
     margin: 0.5rem 0 0.2rem;
 }
 
-form input, form textarea {
+form input, form select, form textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
 }
 
 form button {
@@ -65,14 +67,15 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 form button:hover {
     background: #555;
 }
 
-.contact-info {
-    margin-top: 1rem;
+.contact-info p, .contact-info a {
+    margin: 0.5rem 0;
 }
 
 footer {
@@ -84,38 +87,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-/* Appointment Form Styles */
-#appointment {
-    background: #e0e0e0;
-    padding: 2rem;
-    margin-top: 1rem;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-form button {
-    padding: 0.5rem 1rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #555;
-}
-

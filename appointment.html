@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request an Appointment | Home Inspector Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Home Inspector Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Request an Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="appointment">
+        <h2>Request an Appointment</h2>
+        <form action="https://formspree.io/f/xvgpqpgl" method="POST">
+            <label for="app-name">Name:</label>
+            <input type="text" id="app-name" name="name" required>
+
+            <label for="app-email">Email:</label>
+            <input type="email" id="app-email" name="email" required>
+
+            <label for="app-phone">Phone:</label>
+            <input type="tel" id="app-phone" name="phone">
+
+            <label for="app-service">Service Needed:</label>
+            <select id="app-service" name="service" required>
+                <option value="inspection">Inspection</option>
+                <option value="consultation">Consultation</option>
+                <option value="repair">Repair</option>
+            </select>
+
+            <label for="app-date">Preferred Date:</label>
+            <input type="date" id="app-date" name="date" required>
+
+            <label for="app-time">Preferred Time:</label>
+            <input type="time" id="app-time" name="time" required>
+
+            <label for="app-message">Additional Notes:</label>
+            <textarea id="app-message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Appointment Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Home Inspector Services</p>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>
